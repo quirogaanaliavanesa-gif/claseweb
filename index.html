@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Taller de Escenografía II | FAD UNCUYO 2026</title>
+  <meta name="description" content="Sitio oficial de la cátedra Taller de Escenografía II (Cohorte 2026) - Carrera de Diseño Escenográfico, Facultad de Artes y Diseño, Universidad Nacional de Cuyo. Prof. Titular Analía Quiroga.">
+  <meta name="keywords" content="Escenografía, Diseño Escenográfico, FAD UNCUYO, Analía Quiroga, Teatro Independencia, Vendimia, Iluminación Teatral, SketchUp, Artes Escénicas">
+  <meta name="author" content="Cátedra Taller de Escenografía II - FAD UNCUYO">
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Taller de Escenografía II | FAD - UNCUYO 2026">
+  <meta property="og:description" content="Portal académico y proyectual de Taller de Escenografía II. Poéticas escénicas, materialidad, tecnologías y montaje teatral.">
+  <meta property="og:image" content="assets/images/hero_stage.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Dynamic Ambient Theatrical Spotlight -->
+  <div class="ambient-spotlight" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#inicio" class="brand-link" aria-label="Ir al inicio de Taller de Escenografía II">
+        <div class="brand-icon-wrapper" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">TALLER DE ESCENOGRAFÍA II</span>
+          <span class="brand-subtitle">FAD · UNCUYO · 2026</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#catedra" class="nav-link">La Cátedra</a></li>
+          <li><a href="#ejes" class="nav-link">Ejes Temáticos</a></li>
+          <li><a href="#metodologia" class="nav-link">Metodología</a></li>
+          <li><a href="#evaluacion" class="nav-link">Evaluación</a></li>
+          <li><a href="#biblioteca" class="nav-link">Biblioteca</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm" data-modal-target="modalPrograma" id="btnVerPrograma">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Programa
+          </button>
+          <button class="btn btn-primary btn-sm" data-modal-target="modalMoodle" id="btnMoodleNav">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Campus Virtual
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" id="mobileMenuBtn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div>
+      <div class="drawer-header">
+        <div class="brand-text">
+          <span class="brand-title">ESCENOGRAFÍA II</span>
+          <span class="brand-subtitle">FAD · UNCUYO 2026</span>
+        </div>
+        <button class="drawer-close" aria-label="Cerrar menú">✕</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catedra">La Cátedra & Horarios</a></li>
+        <li><a href="#ejes">Ejes Temáticos</a></li>
+        <li><a href="#metodologia">Metodología & TIC</a></li>
+        <li><a href="#evaluacion">Evaluación & TFI</a></li>
+        <li><a href="#biblioteca">Biblioteca APA</a></li>
+        <li><a href="#contacto">Contacto & Consultas</a></li>
+      </ul>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 2rem;">
+      <button class="btn btn-outline" data-modal-target="modalPrograma">Ver Programa 2026</button>
+      <button class="btn btn-primary" data-modal-target="modalMoodle">Acceso a Moodle</button>
+    </div>
+  </aside>
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-background-wrapper">
+      <img src="assets/images/hero_stage.jpg" alt="Escenario teatral con iluminación dramática de Taller de Escenografía II" class="hero-bg-image" loading="eager">
+      <div class="hero-overlay-gradient"></div>
+      <div class="hero-curtain-lights"></div>
+    </div>
+
+    <div class="container hero-content">
+      <!-- Tag Cluster -->
+      <div class="hero-tag-cluster">
+        <span class="badge badge-pulse">Ciclo Lectivo 2026</span>
+        <span class="badge">Carrera de Diseño Escenográfico</span>
+        <span class="badge badge-cyan">Facultad de Artes y Diseño · UNCUYO</span>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="hero-title">
+        TALLER DE <span>ESCENOGRAFÍA II</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Espacio para la investigación de las poéticas espaciales contemporáneas, la materialidad de la escena y la práctica viva del montaje teatral.
+        <strong class="hero-institution-highlight">Prof. Titular Analía Quiroga &bull; FAD &bull; Universidad Nacional de Cuyo</strong>
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-actions">
+        <a href="#ejes" class="btn btn-primary" id="heroCtaEjes">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          Explorar Saberes del Programa
+        </a>
+        <button class="btn btn-outline" data-modal-target="modalMoodle" id="heroCtaMoodle">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          Acceso a Moodle / Aulas Virtuales
+        </button>
+      </div>
+
+      <!-- 3 Pillars Grid -->
+      <div class="hero-pillars-grid">
+        <article class="pillar-card">
+          <span class="pillar-number">PILAR 01</span>
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            Investigación y Análisis
+          </h3>
+          <p>Lectura semiótica y dramatúrgica del espacio escénico. Deconstrucción de poéticas realistas, abstractas, operísticas y sitios no convencionales.</p>
+        </article>
+
+        <article class="pillar-card">
+          <span class="pillar-number">PILAR 02</span>
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+            Desarrollo Proyectual
+          </h3>
+          <p>Del croquis sensible a la maqueta a escala y la panelería técnica. Construcción de la Biblia de Producción, despieces y memorias conceptuales.</p>
+        </article>
+
+        <article class="pillar-card">
+          <span class="pillar-number">PILAR 03</span>
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            Práctica Escénica
+          </h3>
+          <p>Experimentación en escala real 1:1 en el Aula Teatro. Articulación sinestésica entre volumen físico, luz de sala, sonido y movimiento de cuerpos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: LA CÁTEDRA / EQUIPO DOCENTE & HORARIOS
+       ========================================================================== -->
+  <section class="section-padding" id="catedra">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge section-tag">Cuerpo Académico & Cursada 2026</span>
+        <h2 class="section-title">La Cátedra y Equipo Docente</h2>
+        <p class="section-subtitle">
+          Un espacio pedagógico de formación proyectual guiado por especialistas en escenografía, espacialidad teatral y realización escenotécnica.
+        </p>
+      </div>
+
+      <div class="team-layout">
+        <!-- Main Professor Card -->
+        <article class="teacher-main-card">
+          <div class="teacher-header">
+            <div class="teacher-avatar-box" aria-label="Monograma Analía Quiroga">AQ</div>
+            <div class="teacher-meta">
+              <span class="teacher-role-badge">Profesora Titular de Cátedra</span>
+              <h3>Prof. Analía Quiroga</h3>
+              <a href="mailto:analiaquiroga_84@yahoo.com.ar" class="teacher-email-pill" title="Enviar correo a la Prof. Quiroga">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                analiaquiroga_84@yahoo.com.ar
+              </a>
+            </div>
+          </div>
+
+          <p class="teacher-bio">
+            Especialista en diseño escenográfico, dramaturgia del espacio y realización teatral. Con amplia trayectoria artística y docente en la Facultad de Artes y Diseño de la UNCUYO, lidera la formación proyectual promoviendo el diálogo entre las tradiciones de la puesta en escena clásica, los formatos monumentales de la Vendimia y las vanguardias escénicas expandidas.
+          </p>
+
+          <div class="consultation-box">
+            <h4>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              Horarios de Consulta Docente
+            </h4>
+            <div class="consultation-item">
+              <span><strong>Modalidad Presencial:</strong> Miércoles de 18:00 a 19:30 hs</span>
+              <span class="badge badge-sm">Box Docente / Taller FAD</span>
+            </div>
+            <div class="consultation-item">
+              <span><strong>Modalidad Virtual:</strong> Jueves de 16:00 a 17:00 hs</span>
+              <span class="badge badge-cyan badge-sm">Google Meet / Previa cita</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Adscriptas & Cursada Side Column -->
+        <div class="team-side-column">
+          <!-- Adscriptas -->
+          <article class="adscriptas-card">
+            <h4>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-backlight)" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              Estudiantes Adscriptas
+            </h4>
+
+            <div class="adscripta-profile">
+              <div class="adscripta-avatar">MC</div>
+              <div class="adscripta-info">
+                <h5>Marysol Cáceres</h5>
+                <span>Adscripción a la Docencia e Investigación</span>
+                <span style="font-size: 0.76rem; color: var(--gold-warm); margin-top: 0.2rem;">Consulta: Miércoles 14:00 a 15:00 hs</span>
+              </div>
+            </div>
+
+            <div class="adscripta-profile">
+              <div class="adscripta-avatar">PM</div>
+              <div class="adscripta-info">
+                <h5>Paula Marquez</h5>
+                <span>Adscripción en Escenografía Expandida & TICs</span>
+                <span style="font-size: 0.76rem; color: var(--gold-warm); margin-top: 0.2rem;">Consulta: Jueves 16:00 a 17:00 hs</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Schedule Card -->
+          <article class="schedule-card">
+            <h4>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              Horarios de Cursada 2026
+            </h4>
+
+            <!-- Cuatrimestre Switcher -->
+            <div class="semester-tabs">
+              <button class="semester-tab-btn active" data-target="cuatri1">1° Cuatrimestre</button>
+              <button class="semester-tab-btn" data-target="cuatri2">2° Cuatrimestre</button>
+            </div>
+
+            <!-- Panel 1° Cuatrimestre -->
+            <div class="semester-panel active" id="cuatri1">
+              <div class="schedule-row">
+                <div>
+                  <span class="schedule-day">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle></svg>
+                    Miércoles
+                  </span>
+                  <p class="schedule-location">Aula Taller de Escenografía · Edif. Talleres</p>
+                </div>
+                <span class="schedule-time">15:00 a 18:00 hs</span>
+              </div>
+              <div class="schedule-row">
+                <div>
+                  <span class="schedule-day">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle></svg>
+                    Jueves
+                  </span>
+                  <p class="schedule-location">Aula Teatro FAD · Práctica Escénica</p>
+                </div>
+                <span class="schedule-time">17:00 a 20:00 hs</span>
+              </div>
+            </div>
+
+            <!-- Panel 2° Cuatrimestre -->
+            <div class="semester-panel" id="cuatri2">
+              <div class="schedule-row">
+                <div>
+                  <span class="schedule-day">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle></svg>
+                    Miércoles
+                  </span>
+                  <p class="schedule-location">Aula Taller de Escenografía · Edif. Talleres</p>
+                </div>
+                <span class="schedule-time">17:00 a 20:00 hs</span>
+              </div>
+              <div class="schedule-row">
+                <div>
+                  <span class="schedule-day">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle></svg>
+                    Jueves
+                  </span>
+                  <p class="schedule-location">Aula Teatro FAD · Montaje & Realización</p>
+                </div>
+                <span class="schedule-time">17:00 a 20:00 hs</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: EJES TEMÁTICOS (SABERES)
+       ========================================================================== -->
+  <section class="section-padding" id="ejes" style="background: rgba(10, 13, 20, 0.45);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge section-tag">Programa Curricular 2026</span>
+        <h2 class="section-title">Ejes Temáticos del Programa</h2>
+        <p class="section-subtitle">
+          Cinco dimensiones articuladas de saberes teóricos, experimentación matérica, tecnologías aplicadas y prácticas en salas escénicas de Mendoza.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="axes-controls">
+        <button class="axis-filter-btn active" data-filter="all">Todos los Ejes (5)</button>
+        <button class="axis-filter-btn" data-filter="poeticas">Poéticas & Espacios</button>
+        <button class="axis-filter-btn" data-filter="popular">Celebraciones & Vendimia</button>
+        <button class="axis-filter-btn" data-filter="materialidad">Materialidad & Realización</button>
+        <button class="axis-filter-btn" data-filter="produccion">Producción & Montaje</button>
+        <button class="axis-filter-btn" data-filter="expandida">Escenografía Expandida</button>
+      </div>
+
+      <!-- Accordion List -->
+      <div class="axes-accordion-list" role="region" aria-label="Ejes temáticos desplegables">
+        
+        <!-- EJE 1 -->
+        <article class="axis-accordion-item" data-category="poeticas">
+          <button class="axis-trigger" aria-expanded="false">
+            <div class="axis-trigger-left">
+              <span class="axis-badge-num">01</span>
+              <div class="axis-titles">
+                <span class="axis-category">Eje Temático I &bull; Poéticas Espaciales</span>
+                <h4>Lenguajes y poéticas escenográficas</h4>
+              </div>
+            </div>
+            <div class="axis-trigger-chevron" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="axis-content">
+            <div class="axis-inner">
+              <div class="axis-grid-details">
+                <div class="axis-description">
+                  <h5>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    Contenidos y Núcleo de Saberes
+                  </h5>
+                  <p>
+                    Indagación sobre los modelos espaciales históricos y de vanguardia. La tensión dialéctica entre escenografía naturalista/realista y abstracción formal. Análisis de la caja a la italiana, dispositivos escénicos bifrontales y circulares.
+                  </p>
+                  <ul class="axis-topics-list">
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Escenografía realista y abstracta en salas de cámara: <strong>Teatro Quintanilla</strong> y <strong>Teatro Mendoza</strong>.
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Puesta en escena monumental de <strong>Ópera y Ballet</strong> en el <strong>Teatro Independencia</strong> (maquinaria teatral, varas y foso).
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Espacios no convencionales: intervenciones <em>site-specific</em>, teatro de calle y activaciones arquitectónicas urbanas.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="axis-side-info">
+                  <div class="axis-side-card">
+                    <div>
+                      <h5>Espacios de Referencia</h5>
+                      <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.5rem;">
+                        <span class="space-reference-tag">Teatro Independencia</span>
+                        <span class="space-reference-tag">Teatro Quintanilla</span>
+                        <span class="space-reference-tag">Teatro Mendoza</span>
+                        <span class="space-reference-tag">Espacio Julio Le Parc</span>
+                      </div>
+                    </div>
+                    <div class="deliverable-highlight">
+                      <span>Resultado Proyectual</span>
+                      <p>Lectura semiótica del espacio y memoria conceptual de una obra dramática elegida.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- EJE 2 -->
+        <article class="axis-accordion-item" data-category="popular">
+          <button class="axis-trigger" aria-expanded="false">
+            <div class="axis-trigger-left">
+              <span class="axis-badge-num">02</span>
+              <div class="axis-titles">
+                <span class="axis-category">Eje Temático II &bull; Escenografía Monumental</span>
+                <h4>Cuerpos, materia y celebraciones populares</h4>
+              </div>
+            </div>
+            <div class="axis-trigger-chevron" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="axis-content">
+            <div class="axis-inner">
+              <div class="axis-grid-details">
+                <div class="axis-description">
+                  <h5>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    Contenidos y Núcleo de Saberes
+                  </h5>
+                  <p>
+                    Estudio de las manifestaciones escénicas a escala monumental y territorial. La <strong>Fiesta Nacional de la Vendimia</strong> como dispositivo identitario complejo, integrando arquitectura paisajística, dinámica de masas y utilería.
+                  </p>
+                  <ul class="axis-topics-list">
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Laboratorio de <strong>Utilería Menor y Mayor</strong>: resistencia de materiales, ligereza, cinemática y portabilidad actoral.
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <strong>Vestuario de Masa</strong> como componente escenográfico activo en composiciones coreográficas masivas.
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      El Teatro Griego Frank Romero Day: escala, visuales panorámicas y comportamiento lumínico al aire libre.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="axis-side-info">
+                  <div class="axis-side-card">
+                    <div>
+                      <h5>Enclave de Estudio</h5>
+                      <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.5rem;">
+                        <span class="space-reference-tag" style="background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.35); color: #fbbf24;">Teatro Griego Frank Romero Day</span>
+                        <span class="space-reference-tag">Fiestas Departamentales</span>
+                      </div>
+                    </div>
+                    <div class="deliverable-highlight">
+                      <span>Resultado Proyectual</span>
+                      <p>Diseño de elemento de utilería mayor con articulación mecánica y prueba de resistencia física.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- EJE 3 -->
+        <article class="axis-accordion-item" data-category="materialidad">
+          <button class="axis-trigger" aria-expanded="false">
+            <div class="axis-trigger-left">
+              <span class="axis-badge-num">03</span>
+              <div class="axis-titles">
+                <span class="axis-category">Eje Temático III &bull; Realización Escenotécnica</span>
+                <h4>De la idea a la materialidad</h4>
+              </div>
+            </div>
+            <div class="axis-trigger-chevron" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="axis-content">
+            <div class="axis-inner">
+              <div class="axis-grid-details">
+                <div class="axis-description">
+                  <h5>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    Contenidos y Núcleo de Saberes
+                  </h5>
+                  <p>
+                    Transformación de la intención poética en materia corpórea. Comprensión táctil y volumétrica de la física del escenario, sistemas de sustentación y revestimiento escénico.
+                  </p>
+                  <ul class="axis-topics-list">
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <strong>Panelería a Escala</strong>: bastidores entelados, armazones de madera y praticables modulares autoportantes.
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <strong>Técnicas de Pintura Escénica</strong>: trampantojo (trompe-l'œil), envejecimiento, oxidación, pátinas y falso acabado.
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Atmósferas lumínicas y comportamiento de texturas frente a la temperatura de color de los proyectores teatrales.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="axis-side-info">
+                  <div class="axis-side-card">
+                    <div>
+                      <h5>Espacio Taller</h5>
+                      <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.5rem;">
+                        <span class="space-reference-tag">Taller de Realización FAD</span>
+                        <span class="space-reference-tag">Laboratorio de Materiales</span>
+                      </div>
+                    </div>
+                    <div class="deliverable-highlight">
+                      <span>Resultado Proyectual</span>
+                      <p>Maqueta escenográfica a escala 1:25 con panelería operativa y muestrario de texturas pictóricas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- EJE 4 -->
+        <article class="axis-accordion-item" data-category="produccion">
+          <button class="axis-trigger" aria-expanded="false">
+            <div class="axis-trigger-left">
+              <span class="axis-badge-num">04</span>
+              <div class="axis-titles">
+                <span class="axis-category">Eje Temático IV &bull; Gestión y Montaje</span>
+                <h4>El tránsito de lo imaginado a lo visible</h4>
+              </div>
+            </div>
+            <div class="axis-trigger-chevron" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="axis-content">
+            <div class="axis-inner">
+              <div class="axis-grid-details">
+                <div class="axis-description">
+                  <h5>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    Contenidos y Núcleo de Saberes
+                  </h5>
+                  <p>
+                    La gestión integral de la producción teatral. Cómo documentar, cotizar y coordinar la realización técnica para garantizar la viabilidad constructiva de la puesta en escena.
+                  </p>
+                  <ul class="axis-topics-list">
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <strong>Biblia de Producción Escénica</strong>: planimetría técnica, plantas acotadas, cortes transversales y despieces axonométricos.
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Presupuesto, cómputo métrico de materiales, gestión de proveedores y logística de transporte.
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Cronograma de montaje técnico (<em>load-in</em>), ensayos de prueba y protocolo de seguridad escénica.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="axis-side-info">
+                  <div class="axis-side-card">
+                    <div>
+                      <h5>Metodología Profesional</h5>
+                      <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.5rem;">
+                        <span class="space-reference-tag">Documentación Técnica IRAM</span>
+                        <span class="space-reference-tag">Cómputo & Presupuesto</span>
+                      </div>
+                    </div>
+                    <div class="deliverable-highlight">
+                      <span>Resultado Proyectual</span>
+                      <p>Dossier completo de la Biblia de Producción lista para taller de carpintería y herrería.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- EJE 5 -->
+        <article class="axis-accordion-item" data-category="expandida">
+          <button class="axis-trigger" aria-expanded="false">
+            <div class="axis-trigger-left">
+              <span class="axis-badge-num">05</span>
+              <div class="axis-titles">
+                <span class="axis-category">Eje Temático V &bull; Tecnologías Inmersivas</span>
+                <h4>La escenografía expandida</h4>
+              </div>
+            </div>
+            <div class="axis-trigger-chevron" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="axis-content">
+            <div class="axis-inner">
+              <div class="axis-grid-details">
+                <div class="axis-description">
+                  <h5>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    Contenidos y Núcleo de Saberes
+                  </h5>
+                  <p>
+                    Fronteras contemporáneas del diseño del espacio. Hibridación de dispositivos analógicos y herramientas digitales de última generación para potenciar la narrativa dramática.
+                  </p>
+                  <ul class="axis-topics-list">
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <strong>Modelado Espacial 3D con SketchUp</strong>: renderizado de vistas del espectador, simulación de cámaras y fuga visual.
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <strong>Inteligencia Artificial como recurso creativo</strong>: exploración estética de atmósferas, cromatismos y prompt engineering para moodboards teatrales.
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <strong>Video Mapping y Proyecciones Inmersivas</strong>: interacción de luz proyectada sobre volúmenes reales, gasas y cuerpos en escena.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="axis-side-info">
+                  <div class="axis-side-card">
+                    <div>
+                      <h5>Herramientas Digitales</h5>
+                      <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.5rem;">
+                        <span class="space-reference-tag" style="background: rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.35); color: #c4b5fd;">SketchUp Pro</span>
+                        <span class="space-reference-tag" style="background: rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.35); color: #c4b5fd;">IA Generativa</span>
+                        <span class="space-reference-tag">Video Mapping</span>
+                      </div>
+                    </div>
+                    <div class="deliverable-highlight">
+                      <span>Resultado Proyectual</span>
+                      <p>Render interactivo y propuesta de mapeo digital sincronizado con la espacialidad física.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: METODOLOGÍA & MODALIDAD VIRTUAL / TIC
+       ========================================================================== -->
+  <section class="section-padding" id="metodologia">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge section-tag">Enfoque Pedagógico & Herramientas</span>
+        <h2 class="section-title">Metodología y Modalidad Virtual</h2>
+        <p class="section-subtitle">
+          Una dinámica participativa de taller que conjuga el trabajo manual en mesas de proyecto con un sólido ecosistema digital universitario.
+        </p>
+      </div>
+
+      <!-- Methodology Cards -->
+      <div class="methodology-grid">
+        <article class="method-card">
+          <div class="method-icon-circle">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <h3>Dinámica de Taller "Aprender Haciendo"</h3>
+          <p>
+            Las clases combinan exposiciones dialógicas con el trabajo proyectual continuo. Los estudiantes exploran maquetas de trabajo, debaten poéticas en plenario y experimentan con materiales reales de realización escénica.
+          </p>
+          <div style="font-size: 0.86rem; color: var(--gold-warm); font-weight: 600;">
+            Bitácora de Cursada &bull; Corrección Cruzada &bull; Ensayos de Iluminación
+          </div>
+        </article>
+
+        <article class="method-card">
+          <div class="method-icon-circle" style="background: rgba(225, 29, 72, 0.12); border-color: rgba(225, 29, 72, 0.3); color: #f43f5e;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <h3>Salidas de Campo a Teatros de Mendoza</h3>
+          <p>
+            La cursada incluye recorridos técnicos formativos a los escenarios más relevantes de la provincia. Los alumnos inspeccionan parrillas técnicas, varas, tiros contrapesados y cajas a la italiana junto a maquinistas y realizadores.
+          </p>
+          <div class="theaters-pill-list">
+            <span class="theater-pill">Teatro Independencia</span>
+            <span class="theater-pill">Teatro Mendoza</span>
+            <span class="theater-pill">Teatro Quintanilla</span>
+            <span class="theater-pill">Espacio Le Parc</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- TIC Ecosystem Box -->
+      <article class="tic-ecosystem-box">
+        <div class="header-tic">
+          <div>
+            <h3>Ecosistema Digital & Herramientas TIC</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.25rem;">
+              Integración de plataformas institucionales UNCUYO y software de vanguardia proyectual.
+            </p>
+          </div>
+          <button class="btn btn-outline btn-sm" data-modal-target="modalMoodle">
+            Guía de Acceso Aulas Virtuales
+          </button>
+        </div>
+
+        <div class="tic-grid">
+          <!-- Moodle Card -->
+          <div class="tic-tool-card">
+            <div class="tic-tool-header">
+              <div class="tic-tool-icon icon-moodle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h4>Campus Moodle FAD</h4>
+            </div>
+            <p>Repositorio de consignas, entrega de trabajos prácticos, foros de debate y acceso a bibliografía digitalizada.</p>
+            <span class="tic-tag">Plataforma Oficial UNCUYO</span>
+          </div>
+
+          <!-- SketchUp Card -->
+          <div class="tic-tool-card">
+            <div class="tic-tool-header">
+              <div class="tic-tool-icon icon-sketchup">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h4>SketchUp & 3D CAD</h4>
+            </div>
+            <p>Modelado volumétrico, simulación de tiros de visual del público, plantas acotadas y perspectivas axonométricas.</p>
+            <span class="tic-tag">Modelado Espacial</span>
+          </div>
+
+          <!-- IA Generativa Card -->
+          <div class="tic-tool-card">
+            <div class="tic-tool-header">
+              <div class="tic-tool-icon icon-ai">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h4>Inteligencia Artificial</h4>
+            </div>
+            <p>Uso crítico de IA (Midjourney, DALL-E, ChatGPT) para conceptualización rápida de atmósferas y moodboards escénicos.</p>
+            <span class="tic-tag">Recurso Creativo</span>
+          </div>
+
+          <!-- Canva & Meet Card -->
+          <div class="tic-tool-card">
+            <div class="tic-tool-header">
+              <div class="tic-tool-icon icon-canva">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 7l-7 5 7 5V7z"></path>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+              <h4>Meet, WhatsApp & Canva</h4>
+            </div>
+            <p>Tutorías sincrónicas, avisos instantáneos de cátedra y maquetación gráfica de láminas de presentación y dossiers.</p>
+            <span class="tic-tag">Comunicación & Diseño</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: EVALUACIÓN & ACREDITACIÓN
+       ========================================================================== -->
+  <section class="section-padding" id="evaluacion" style="background: rgba(10, 13, 20, 0.45);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge section-tag">Condiciones Académicas 2026</span>
+        <h2 class="section-title">Evaluación y Acreditación</h2>
+        <p class="section-subtitle">
+          Criterios formativos basados en el seguimiento continuo del proceso proyectual, la solvencia técnica y la defensa del Trabajo Final.
+        </p>
+      </div>
+
+      <!-- Regime Comparison Grid -->
+      <div class="eval-comparison-grid">
+        <!-- Promocional -->
+        <article class="eval-regime-card featured">
+          <div class="eval-regime-header">
+            <span class="badge" style="margin-bottom: 0.5rem;">Acreditación Directa</span>
+            <h3>Estudiantes Promocionales</h3>
+            <p style="font-size: 0.88rem; color: var(--gold-warm);">Aprobación de la materia sin examen final tradicional</p>
+          </div>
+
+          <ul class="eval-condition-list">
+            <li class="eval-condition-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="eval-icon-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>80% de asistencia obligatoria</strong> a las clases presenciales de taller y visitas a salas teatrales.</span>
+            </li>
+            <li class="eval-condition-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="eval-icon-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>100% de los Trabajos Prácticos (3 TPs)</strong> aprobados en primera instancia o instancia de corrección con nota <strong>&ge; 7 (siete)</strong>.</span>
+            </li>
+            <li class="eval-condition-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="eval-icon-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>2 Exámenes Parciales</strong> teórico-proyectuales aprobados con calificación mínima de <strong>7 (siete)</strong> o superior.</span>
+            </li>
+            <li class="eval-condition-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="eval-icon-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Defensa pública satisfactoria</strong> del Trabajo Final Integrador (TFI) en el Aula Teatro.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Regular -->
+        <article class="eval-regime-card">
+          <div class="eval-regime-header">
+            <span class="badge badge-cyan" style="margin-bottom: 0.5rem;">Régimen con Examen Final</span>
+            <h3>Estudiantes Regulares</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Habilitación para rendir en turnos de examen ordinarios</p>
+          </div>
+
+          <ul class="eval-condition-list">
+            <li class="eval-condition-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-backlight)" stroke-width="2.5" class="eval-icon-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>60% de asistencia mínima</strong> a las sesiones prácticas de taller y actividades curriculares.</span>
+            </li>
+            <li class="eval-condition-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-backlight)" stroke-width="2.5" class="eval-icon-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Aprobación de los <strong>3 Trabajos Prácticos</strong> con una calificación mínima de <strong>6 (seis)</strong> (con derecho a instancias de recuperatorio).</span>
+            </li>
+            <li class="eval-condition-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-backlight)" stroke-width="2.5" class="eval-icon-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Aprobación de los <strong>2 Parciales</strong> con calificación mínima de <strong>6 (seis)</strong> (o sus respectivos recuperatorios).</span>
+            </li>
+            <li class="eval-condition-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-backlight)" stroke-width="2.5" class="eval-icon-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Rendir <strong>Examen Final Integrador</strong> frente a tribunal de cátedra con presentación de maqueta y biblia de producción.</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Spotlight Showcase: Trabajo Final Integrador (TFI) -->
+      <article class="tfi-showcase">
+        <div class="tfi-content">
+          <div>
+            <span class="badge badge-crimson tfi-badge">Hito Curricular Culminante</span>
+            <h3>Trabajo Final Integrador (TFI)</h3>
+            <p>
+              Consiste en el <strong>montaje escenográfico completo a escala real (1:1)</strong> en el <strong>Aula Teatro de la FAD</strong>. Los estudiantes integran de forma sinestésica la resolución constructiva de panelería, ambientación lumínica controlada por consola, banda sonora envolvente, utilería mayor y prueba de interacción con desplazamiento de actores en escena.
+            </p>
+            <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+              <span class="badge">Aula Teatro FAD</span>
+              <span class="badge badge-cyan">Escala 1:1</span>
+              <span class="badge badge-pulse">Defensa en Vivo</span>
+            </div>
+          </div>
+
+          <div class="tfi-features-grid">
+            <div class="tfi-mini-feature">
+              <h4>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                Iluminación & Puesta
+              </h4>
+              <span>Articulación de plantas de luces con filtros de color y contrastes dramáticos.</span>
+            </div>
+
+            <div class="tfi-mini-feature">
+              <h4>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                Materialidad & Panelería
+              </h4>
+              <span>Estructuras autoportantes seguras, bastidores entelados y texturas escénicas.</span>
+            </div>
+
+            <div class="tfi-mini-feature">
+              <h4>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                Paisaje Sonoro
+              </h4>
+              <span>Musicalización y efectos incidentales sincronizados con la dinámica espacial.</span>
+            </div>
+
+            <div class="tfi-mini-feature">
+              <h4>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                Cuerpo & Movimiento
+              </h4>
+              <span>Pruebas espaciales de circulación, líneas de visión y dinamismo escénico.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: BIBLIOTECA & RECURSOS (NORMAS APA 7ma EDICIÓN)
+       ========================================================================== -->
+  <section class="section-padding" id="biblioteca">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge section-tag">Acervo Teórico & Bibliografía</span>
+        <h2 class="section-title">Biblioteca y Recursos de Cátedra</h2>
+        <p class="section-subtitle">
+          Textos fundamentales y complementarios con citas estandarizadas en normas APA (7ma edición), disponibles en la Biblioteca FAD y Campus Moodle.
+        </p>
+      </div>
+
+      <!-- Search and Filter Bar -->
+      <div class="library-toolbar">
+        <div class="library-search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="librarySearch" placeholder="Buscar por autor, título, concepto o palabra clave (ej: Breyer, luz, semiótica)..." aria-label="Buscar en la biblioteca">
+        </div>
+
+        <div class="library-filter-pills">
+          <button class="lib-filter-btn active" data-filter="all">Todos los Libros</button>
+          <button class="lib-filter-btn" data-filter="obligatoria">Obligatoria</button>
+          <button class="lib-filter-btn" data-filter="espacio">Espacio & Semiótica</button>
+          <button class="lib-filter-btn" data-filter="tecnica">Técnica & Iluminación</button>
+        </div>
+      </div>
+
+      <!-- Books Grid -->
+      <div class="library-grid">
+
+        <!-- Breyer -->
+        <article class="book-card" data-category="obligatoria espacio">
+          <div class="book-card-top">
+            <div class="book-badges-row">
+              <span class="badge">Bibliografía Obligatoria</span>
+              <span class="badge badge-cyan">Teoría del Espacio</span>
+            </div>
+            <h3 class="book-author-title">Gastón Breyer &bull; La escena presente y el espacio escénico</h3>
+            <div class="book-apa-citation">
+              Breyer, G. (2005). <em>La escena presente: Teoría del espacio teatral</em>. Ediciones Artes del Sur.
+            </div>
+            <p class="book-pedagogical-value">
+              <strong>Aporte en Cátedra:</strong> Texto angular para comprender la espacialidad teatral como campo de fuerzas relacional entre arquitectura, actores y espectadores.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <button class="btn-copy-apa" data-citation="Breyer, G. (2005). La escena presente: Teoría del espacio teatral. Ediciones Artes del Sur.">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar Cita APA
+            </button>
+            <span class="availability-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              PDF en Moodle / Biblioteca FAD
+            </span>
+          </div>
+        </article>
+
+        <!-- Brook -->
+        <article class="book-card" data-category="obligatoria espacio">
+          <div class="book-card-top">
+            <div class="book-badges-row">
+              <span class="badge">Bibliografía Obligatoria</span>
+              <span class="badge badge-cyan">Dramaturgia Escénica</span>
+            </div>
+            <h3 class="book-author-title">Peter Brook &bull; El espacio vacío</h3>
+            <div class="book-apa-citation">
+              Brook, P. (1968). <em>El espacio vacío: Arte y técnica del teatro</em>. Editorial Alba (Ed. rev. 2012).
+            </div>
+            <p class="book-pedagogical-value">
+              <strong>Aporte en Cátedra:</strong> Ensayo canónico sobre el despojo del artificio, la presencia viva del cuerpo y las cuatro tipologías teatrales (sagrado, tosco, mortal e inmediato).
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <button class="btn-copy-apa" data-citation="Brook, P. (1968). El espacio vacío: Arte y técnica del teatro. Editorial Alba (Ed. rev. 2012).">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar Cita APA
+            </button>
+            <span class="availability-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Disponible Biblioteca Central UNCUYO
+            </span>
+          </div>
+        </article>
+
+        <!-- Calmet -->
+        <article class="book-card" data-category="obligatoria tecnica">
+          <div class="book-card-top">
+            <div class="book-badges-row">
+              <span class="badge">Bibliografía Obligatoria</span>
+              <span class="badge badge-cyan">Escenotecnia & Realización</span>
+            </div>
+            <h3 class="book-author-title">Héctor Calmet &bull; Escenografía: Escenotécnica e Iluminación</h3>
+            <div class="book-apa-citation">
+              Calmet, H. (2003). <em>Escenografía: Escenotécnica e iluminación teatral</em>. Ediciones de la Flor.
+            </div>
+            <p class="book-pedagogical-value">
+              <strong>Aporte en Cátedra:</strong> Manual técnico operativo fundamental para comprender la maquinaria escénica tradicional argentina, confección de planos y sistemas de colgado.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <button class="btn-copy-apa" data-citation="Calmet, H. (2003). Escenografía: Escenotécnica e iluminación teatral. Ediciones de la Flor.">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar Cita APA
+            </button>
+            <span class="availability-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Ejemplares en Biblioteca FAD
+            </span>
+          </div>
+        </article>
+
+        <!-- Arnheim -->
+        <article class="book-card" data-category="obligatoria espacio">
+          <div class="book-card-top">
+            <div class="book-badges-row">
+              <span class="badge">Bibliografía Obligatoria</span>
+              <span class="badge badge-cyan">Percepción Visual</span>
+            </div>
+            <h3 class="book-author-title">Rudolf Arnheim &bull; Arte y percepción visual</h3>
+            <div class="book-apa-citation">
+              Arnheim, R. (1979). <em>Arte y percepción visual: Psicología del ojo creador</em>. Alianza Editorial.
+            </div>
+            <p class="book-pedagogical-value">
+              <strong>Aporte en Cátedra:</strong> Aplicación de la teoría de la Gestalt a la composición escenográfica: equilibrio, peso visual, tensiones compositivas y contraste figura-fondo.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <button class="btn-copy-apa" data-citation="Arnheim, R. (1979). Arte y percepción visual: Psicología del ojo creador. Alianza Editorial.">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar Cita APA
+            </button>
+            <span class="availability-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Disponible en Biblioteca FAD
+            </span>
+          </div>
+        </article>
+
+        <!-- Pavis -->
+        <article class="book-card" data-category="espacio">
+          <div class="book-card-top">
+            <div class="book-badges-row">
+              <span class="badge">Bibliografía Complementaria</span>
+              <span class="badge badge-cyan">Semiótica Teatral</span>
+            </div>
+            <h3 class="book-author-title">Patrice Pavis &bull; Diccionario del teatro</h3>
+            <div class="book-apa-citation">
+              Pavis, P. (1998). <em>Diccionario del teatro: Dramaturgia, estética, semiología</em>. Ediciones Paidós.
+            </div>
+            <p class="book-pedagogical-value">
+              <strong>Aporte en Cátedra:</strong> Glosario de rigor conceptual para precisar términos sobre espacialidad, escenografía, utilería, proxémica y convenciones escénicas.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <button class="btn-copy-apa" data-citation="Pavis, P. (1998). Diccionario del teatro: Dramaturgia, estética, semiología. Ediciones Paidós.">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar Cita APA
+            </button>
+            <span class="availability-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Sala de Consulta Biblioteca FAD
+            </span>
+          </div>
+        </article>
+
+        <!-- Ubersfeld -->
+        <article class="book-card" data-category="espacio">
+          <div class="book-card-top">
+            <div class="book-badges-row">
+              <span class="badge">Bibliografía Complementaria</span>
+              <span class="badge badge-cyan">Semiótica Teatral</span>
+            </div>
+            <h3 class="book-author-title">Anne Ubersfeld &bull; Semiótica teatral</h3>
+            <div class="book-apa-citation">
+              Ubersfeld, A. (1989). <em>Semiótica teatral</em>. Cátedra.
+            </div>
+            <p class="book-pedagogical-value">
+              <strong>Aporte en Cátedra:</strong> Herramientas metodológicas de lectura y deconstrucción de signos espaciales en la dramaturgia y en la puesta en escena viva.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <button class="btn-copy-apa" data-citation="Ubersfeld, A. (1989). Semiótica teatral. Cátedra.">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar Cita APA
+            </button>
+            <span class="availability-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Capítulos en Moodle FAD
+            </span>
+          </div>
+        </article>
+
+        <!-- Svoboda -->
+        <article class="book-card" data-category="tecnica espacio">
+          <div class="book-card-top">
+            <div class="book-badges-row">
+              <span class="badge">Bibliografía Complementaria</span>
+              <span class="badge badge-cyan">Escenografía de Luz</span>
+            </div>
+            <h3 class="book-author-title">Josef Svoboda &bull; El secreto del espacio escénico</h3>
+            <div class="book-apa-citation">
+              Svoboda, J. (1993). <em>The Secret of Theatrical Space: The Memoirs of Josef Svoboda</em>. Applause Books.
+            </div>
+            <p class="book-pedagogical-value">
+              <strong>Aporte en Cátedra:</strong> El padre de la escenografía cinemática y la linterna mágica: el uso de la luz y la cinética como materia arquitectónica dramática.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <button class="btn-copy-apa" data-citation="Svoboda, J. (1993). The Secret of Theatrical Space: The Memoirs of Josef Svoboda. Applause Books.">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar Cita APA
+            </button>
+            <span class="availability-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Ficha de Cátedra Digital
+            </span>
+          </div>
+        </article>
+
+        <!-- Lehmann -->
+        <article class="book-card" data-category="espacio">
+          <div class="book-card-top">
+            <div class="book-badges-row">
+              <span class="badge">Bibliografía Complementaria</span>
+              <span class="badge badge-cyan">Teatro Posdramático</span>
+            </div>
+            <h3 class="book-author-title">Hans-Thies Lehmann &bull; Teatro posdramático</h3>
+            <div class="book-apa-citation">
+              Lehmann, H.-T. (2013). <em>Teatro posdramático</em>. Centro Párraga / Cendeac.
+            </div>
+            <p class="book-pedagogical-value">
+              <strong>Aporte en Cátedra:</strong> Marco teórico clave para abordar el Eje 5 (Escenografía Expandida): la desjerarquización del texto y la centralidad de la experiencia perceptual inmersiva.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <button class="btn-copy-apa" data-citation="Lehmann, H.-T. (2013). Teatro posdramático. Centro Párraga / Cendeac.">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar Cita APA
+            </button>
+            <span class="availability-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Acceso en Repositorio FAD
+            </span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: CONTACTO & CONSULTAS
+       ========================================================================== -->
+  <section class="section-padding" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge section-tag">Canales Oficiales & Orientación</span>
+        <h2 class="section-title">Contacto y Consultas de Cátedra</h2>
+        <p class="section-subtitle">
+          Canal de comunicación directo entre estudiantes, adscriptas y equipo docente para coordinación pedagógica y seguimiento proyectual.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Info Column -->
+        <article class="contact-info-card">
+          <div>
+            <h3>Sede de Cátedra e Información</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65;">
+              La materia se dicta presencialmente en el Edificio de Talleres y Aula Teatro de la Facultad de Artes y Diseño, ubicada en el Centro Universitario de Mendoza.
+            </p>
+
+            <ul class="contact-channels-list">
+              <li class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-text">
+                  <h4>Ubicación Física</h4>
+                  <p>Taller de Escenografía &bull; Edificio de Talleres FAD<br>Centro Universitario, Parque General San Martín, Mendoza, Argentina.</p>
+                </div>
+              </li>
+
+              <li class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-text">
+                  <h4>Correo Institucional de Cátedra</h4>
+                  <a href="mailto:analiaquiroga_84@yahoo.com.ar">analiaquiroga_84@yahoo.com.ar</a>
+                  <p style="font-size: 0.76rem; color: var(--text-muted); margin-top: 0.2rem;">Atención: Prof. Titular Analía Quiroga</p>
+                </div>
+              </li>
+
+              <li class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-text">
+                  <h4>Días de Actividad Presencial</h4>
+                  <p>Miércoles y Jueves (Turno Tarde / Vespertino)<br>Facultad de Artes y Diseño - UNCUYO</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div style="background: rgba(0,0,0,0.3); border-radius: var(--radius-md); padding: 1.25rem; border: 1px solid var(--border-glass);">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.85rem; font-weight: 600; color: #fff;">¿Sos estudiante regular o adscrito?</span>
+              <button class="btn btn-primary btn-sm" data-modal-target="modalMoodle">Acceder a Moodle</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Interactive Consultation Form -->
+        <article class="interactive-form-card">
+          <h3>Envío de Consulta Pedagógica</h3>
+          <p>Completá este formulario para enviar una consulta sobre trabajos prácticos, bibliografía, horarios o instancias de evaluación.</p>
+
+          <form id="consultationForm">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="studentName" class="form-label">Nombre y Apellido *</label>
+                <input type="text" id="studentName" class="form-control" placeholder="Ej: Valentina Morales" required>
+              </div>
+
+              <div class="form-group">
+                <label for="studentEmail" class="form-label">Correo Electrónico *</label>
+                <input type="email" id="studentEmail" class="form-control" placeholder="nombre@uncuyo.edu.ar" required>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="studentRegistry" class="form-label">N° de Registro / Legajo</label>
+                <input type="text" id="studentRegistry" class="form-control" placeholder="Ej: 34821">
+              </div>
+
+              <div class="form-group">
+                <label for="queryTopic" class="form-label">Motivo de Consulta *</label>
+                <select id="queryTopic" class="form-control" required>
+                  <option value="" disabled selected>Selecciona una opción...</option>
+                  <option value="tp">Trabajo Práctico / Corrección de Maqueta</option>
+                  <option value="tfi">Trabajo Final Integrador (TFI)</option>
+                  <option value="horarios">Horario de Consulta Docente</option>
+                  <option value="bibliografia">Material Bibliográfico / Moodle</option>
+                  <option value="regularidad">Régimen de Promoción o Regularidad</option>
+                  <option value="otro">Otra Consulta Académica</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="queryMessage" class="form-label">Detalle de tu Consulta o Proyecto *</label>
+              <textarea id="queryMessage" class="form-control" rows="4" placeholder="Describe brevemente tu consulta sobre la obra, escala, técnica o requerimiento de cátedra..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Enviar Mensaje a la Cátedra
+            </button>
+          </form>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>TALLER DE ESCENOGRAFÍA II</h4>
+          <p>
+            Carrera de Diseño Escenográfico &bull; Facultad de Artes y Diseño (FAD)<br>
+            Universidad Nacional de Cuyo &bull; Cohorte Académica 2026.<br>
+            Mendoza, República Argentina.
+          </p>
+          <span class="badge badge-pulse">Ciclo 2026 Vigente</span>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegación Rápida</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catedra">Equipo Docente</a></li>
+            <li><a href="#ejes">Ejes Temáticos</a></li>
+            <li><a href="#metodologia">Metodología & TIC</a></li>
+            <li><a href="#evaluacion">Evaluación & TFI</a></li>
+            <li><a href="#biblioteca">Biblioteca APA</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Enlaces Institucionales</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="https://fad.uncuyo.edu.ar/" target="_blank" rel="noopener noreferrer">
+                FAD UNCUYO Web
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.uncuyo.edu.ar/" target="_blank" rel="noopener noreferrer">
+                Universidad Nacional de Cuyo
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://siu.uncuyo.edu.ar/" target="_blank" rel="noopener noreferrer">
+                SIU Guaraní UNCUYO
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-modal-target="modalMoodle">
+                Campus Virtual Moodle FAD
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contacto Académico</h5>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.65rem;">
+            <strong>Titular:</strong> Prof. Analía Quiroga
+          </p>
+          <p style="font-size: 0.82rem; font-family: var(--font-mono); color: var(--gold-warm); margin-bottom: 1rem;">
+            analiaquiroga_84@yahoo.com.ar
+          </p>
+          <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+            Facultad de Artes y Diseño &bull; Edificio de Talleres &bull; Centro Universitario, Mendoza.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taller de Escenografía II &bull; Carrera de Diseño Escenográfico &bull; FAD UNCUYO. Todos los derechos reservados.</p>
+        <p style="font-family: var(--font-mono); font-size: 0.76rem;">Puesta en escena digital &bull; Versión 2026.1</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: ACCESO A MOODLE / AULAS VIRTUALES
+       ========================================================================== -->
+  <div class="modal-overlay" id="modalMoodle" role="dialog" aria-modal="true" aria-labelledby="modalMoodleTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalMoodleTitle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2" style="vertical-align: -3px; margin-right: 6px;">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          Aulas Virtuales & Moodle FAD
+        </h3>
+        <button class="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">
+          Accesos directos al ecosistema virtual de la cátedra para el ciclo lectivo 2026. Recuerda ingresar con tu usuario y contraseña institucional UNCUYO.
+        </p>
+
+        <div class="modal-moodle-grid">
+          <!-- Moodle Link -->
+          <a href="https://moodle.fad.uncuyo.edu.ar/" target="_blank" rel="noopener noreferrer" class="moodle-access-card">
+            <div class="moodle-card-left">
+              <div class="moodle-card-icon icon-moodle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="moodle-card-text">
+                <h4>Aula Moodle: Taller de Escenografía II (2026)</h4>
+                <p>Entrega de Trabajos Prácticos, foros, consignas y lecturas.</p>
+              </div>
+            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+
+          <!-- Google Meet Link -->
+          <a href="https://meet.google.com/" target="_blank" rel="noopener noreferrer" class="moodle-access-card">
+            <div class="moodle-card-left">
+              <div class="moodle-card-icon icon-canva">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+              <div class="moodle-card-text">
+                <h4>Sala Virtual de Consulta (Google Meet)</h4>
+                <p>Tutorías y consultas virtuales con Prof. Quiroga y adscriptas.</p>
+              </div>
+            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+
+          <!-- WhatsApp Channel -->
+          <a href="https://chat.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="moodle-access-card">
+            <div class="moodle-card-left">
+              <div class="moodle-card-icon" style="background: rgba(34, 197, 94, 0.15); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <div class="moodle-card-text">
+                <h4>Comunidad Oficial de WhatsApp (Cohorte 2026)</h4>
+                <p>Avisos inmediatos, modificaciones de taller y recordatorios.</p>
+              </div>
+            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+
+          <!-- Drive Resources -->
+          <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer" class="moodle-access-card">
+            <div class="moodle-card-left">
+              <div class="moodle-card-icon" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="moodle-card-text">
+                <h4>Drive de Cátedra: Plantillas & Modelos 3D</h4>
+                <p>Bloques de SketchUp, texturas teatrales y carátulas IRAM.</p>
+              </div>
+            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: VER PROGRAMA SINTÉTICO 2026
+       ========================================================================== -->
+  <div class="modal-overlay" id="modalPrograma" role="dialog" aria-modal="true" aria-labelledby="modalProgramaTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalProgramaTitle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold-warm)" stroke-width="2" style="vertical-align: -3px; margin-right: 6px;">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          Programa Sintético &bull; Cohorte 2026
+        </h3>
+        <button class="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div style="background: rgba(243, 194, 103, 0.08); border-left: 3px solid var(--gold-warm); padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
+          <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 0.25rem;">Taller de Escenografía II &bull; Régimen Anual 2026</h4>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">
+            Carrera de Diseño Escenográfico &bull; Facultad de Artes y Diseño &bull; UNCUYO<br>
+            <strong>Docente a cargo:</strong> Prof. Analía Quiroga | <strong>Carga horaria:</strong> 6 horas cátedra semanales.
+          </p>
+        </div>
+
+        <h4 style="font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold-warm); margin-bottom: 0.75rem;">
+          Fundamentación de la Asignatura
+        </h4>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+          La materia profundiza la formación en diseño del espacio escénico integrando los lenguajes poéticos tradicionales con los desafíos contemporáneos del espectáculo a gran escala (Fiesta Nacional de la Vendimia), la experimentación técnica en panelería y maquetas, y la incorporación de tecnologías inmersivas y modelado tridimensional.
+        </p>
+
+        <h4 style="font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold-warm); margin-bottom: 0.75rem;">
+          Cronograma de Trabajos Prácticos
+        </h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.75rem; font-size: 0.86rem; color: var(--text-secondary);">
+          <li style="padding: 0.6rem 0.85rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+            <strong style="color: #fff;">TP N° 1 (1° Cuatrimestre):</strong> Deconstrucción poética y espacial en teatros históricos de Mendoza (Teatro Quintanilla / Independencia).
+          </li>
+          <li style="padding: 0.6rem 0.85rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+            <strong style="color: #fff;">TP N° 2 (1° Cuatrimestre):</strong> Dispositivo escénico monumental y utilería mayor para el Teatro Griego Frank Romero Day.
+          </li>
+          <li style="padding: 0.6rem 0.85rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+            <strong style="color: #fff;">TP N° 3 (2° Cuatrimestre):</strong> Biblia de producción técnica, panelería modular y prototipo a escala con texturas.
+          </li>
+          <li style="padding: 0.6rem 0.85rem; background: rgba(243, 194, 103, 0.1); border-radius: var(--radius-sm); border: 1px solid rgba(243, 194, 103, 0.3);">
+            <strong style="color: var(--gold-warm);">TFI (Cierre de Cursada):</strong> Montaje escenográfico vivo a escala 1:1 en el Aula Teatro de la FAD.
+          </li>
+        </ul>
+
+        <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+          <button class="btn btn-outline btn-sm" onclick="window.print()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Imprimir Programa
+          </button>
+          <button class="btn btn-primary btn-sm modal-close-btn">
+            Entendido
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" aria-live="polite"></div>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
